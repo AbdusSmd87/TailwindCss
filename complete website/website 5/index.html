@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<nav class="bg-black">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-rose-500">Op<span
+                    class="text-red-400">pOi</span></span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4  md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Features</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Screenshot</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">FAQs</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- <nav class="bg-black dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center"> <span
+                class="self-center text-2xl font-semibold whitespace-nowrap text-rose-500">Op<span
+                    class="text-red-400">pOi</span></span>
+        </a>
+
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul
+                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Features</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Screenshot</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">FAQs</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4  hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav> -->
+
+
+<section class="text-center text-white">
+    <div class="bg-[url('Cloudy.svg')] max-w-full bg-cover bg-center bg-no-repeat bg-fixed">
+        <div class="mx-auto w-full px-6 sm:px-8 md:px-12">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4">
+                <div class="grid1-item p-60 text-center">
+                    <div id="Land" data-aos="fade-up">
+                        <h1 class="text-[2rem] font-thin sm:text-[22px] lg:text-[3rem]">BUILT FOR</h1>
+                        <h2 class="text-[3rem] font-normal sm:text-sm lg:text-[3rem]">PASSIONATE PEOPLE</h2>
+                        <p class="text-[.6rem] sm:text-[7px] lg:text-[1rem] lg:mt-7">Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Repellendus
+                            recusandae
+                            beatae reiciendis<br>consequatur suscipit illum fugiat minus dicta deleniti? Ut ducimus
+                            dignissimos
+                            libero?</p>
+                        <div class="mt-10">
+                            <a href="#"
+                                class="px-10 py-2 bg-rose-500 rounded-full hover:bg-red-400 hover:text-black duration-200"><i
+                                    class="fa-solid fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-center text-black">
+    <div
+        class="bg-[url('https://screenshots.pro/static/47f8cf5c7d8acbe68157f61b1e87cc0f/f7ff6/cycle.png')] max-w-full bg-cover bg-center bg-no-repeat bg-fixed">
+        <div class="mx-auto w-full px-6 sm:px-8 md:px-12">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4">
+                <div class="grid1-item p-60 text-center">
+                    <div class="bg-slate-300 rounded-lg pb-4" data-aos="fade-right">
+                        <h1 class="text-[2rem] font-thin sm:text-[22px] lg:text-[3rem]">Try!</h1>
+                        <h2 class="text-[3rem] font-normal sm:text-sm lg:text-[3rem]">For Free</h2>
+                        <p class="text-[.6rem] sm:text-[7px] lg:text-[1rem] lg:mt-7">Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Repellendus
+                            recusandae
+                            beatae reiciendis<br>consequatur suscipit illum fugiat minus dicta deleniti? Ut ducimus
+                            dignissimos
+                            libero?</p>
+                        <div class="mt-10 text-white">
+                            <a href="#"
+                                class="px-10 py-2 bg-rose-500 rounded-full hover:bg-red-400 hover:text-black duration-200"><i
+                                    class="fa-solid fa-pen-to-square"></i> Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- <section class="bg-indigo-50 py-20 text-center">
+    <div class="mx-auto max-w-7x1 px-6 sm:px-8 md:px-12">
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
+
+            <div
+                class="grid1-item bg-slate-50 rounded-lg p-3 hover:shadow-2xl hover:border-b-4  border-stone-700 hover:duration-700 ">
+                <i class="fa-sharp fa-solid fa-comment fa-flip-both fa-2xl bg-slate-600"></i>
+                <h1 class="text-[1.1rem] font-semibold mt-2 hover:scale-110">EASY TO USED</h1>
+                <p class="text-[10px] mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit totam
+                    architecto reprehenderit
+                    veritatis culpa recusandae quas facere fugit corporis odio porro velit, fuga tempore atque unde odit
+                    doloribus accusantium incidunt.</p>
+            </div>
+            <div
+                class="grid1-item bg-slate-50 rounded-lg p-3 hover:shadow-2xl hover:border-t-4  border-stone-700 hover:duration-700">
+                <h1 class="text-[1.1rem] font-semibold mt-6 hover:scale-110">AWESOME DESIGN</h1>
+                <p class="text-[10px] mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit totam
+                    architecto reprehenderit
+                    veritatis culpa recusandae quas facere fugit corporis odio porro velit, fuga tempore atque unde odit
+                    doloribus accusantium incidunt.</p>
+            </div>
+            <div
+                class="grid1-item bg-slate-50 rounded-lg p-3 hover:shadow-2xl hover:border-l-4  border-stone-700 hover:duration-700">
+                <h1 class="text-[1.1rem] font-semibold mt-6 hover:scale-110">EASY TO CUSTOMIZE</h1>
+                <p class="text-[10px] mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit totam
+                    architecto reprehenderit
+                    veritatis culpa recusandae quas facere fugit corporis odio porro velit, fuga tempore atque unde odit
+                    doloribus accusantium incidunt.</p>
+            </div>
+            <div
+                class="grid1-item bg-slate-50 rounded-lg p-3 hover:shadow-2xl hover:border-r-4  border-stone-700 hover:duration-700">
+                <h1 class="text-[1.1rem] font-semibold mt-6 hover:scale-110">24 HOUR SUPPORT</h1>
+                <p class="text-[10px] mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit totam
+                    architecto reprehenderit
+                    veritatis culpa recusandae quas facere fugit corporis odio porro velit, fuga tempore atque unde odit
+                    doloribus accusantium incidunt.</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section class="bg-indigo-50 py-20 text-center">
+    <div class="mx-auto max-w-7x1 px-6 sm:px-8 md:px-12">
+        <h2 class="text-2x1 mt-3 font-semibold md:text-3x1">ABOUT OUR APP</h2>
+        <p class="mx-auto mt-3 max-w-xl text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing </p>
+
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
+
+            <div class="grid1-item text-left">
+                <h1 class="font-medium text-2xl">Take a Look About our App</h1>
+                <p class="text-sm mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit magnam
+                    odio quibusdam
+                    perferendis maiores explicabo odit, rem officiis incidunt, reiciendis ad iure deserunt iste
+                    debitis sequi dolores quis quasi.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, optio pariatur ullam illo ab,
+                    saepe porro, quibusdam debitis hic quaerat autem dignissimos minus voluptatum odio aut. Quas nihil
+                    cupiditate minima.</p>
+                <p class="mt-2"> Ullam architecto tenetur voluptas eius
+                    possimus deserunt fugit? Earum quasi quam libero! Voluptates dignissimos cum nihil repudiandae
+                    dolorem odio mollitia iusto reprehenderit?</p>
+                <button type="button" class="btn2">Search</button>
+            </div>
+            <div class="grid1-item">
+                <img src="https://screenshots.pro/static/47f8cf5c7d8acbe68157f61b1e87cc0f/f7ff6/cycle.png"
+                    class="w-[30rem] relative">
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

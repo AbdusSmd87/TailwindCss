@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wir /School</title>
+    <style>
+        #shad {
+            border-radius: 40px 0px 100px 40px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        #shad:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        #foot {
+            background: url(Stock\ Chart.svg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            height: auto;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav data-aos="fade-down">
+        <div class="max-w-screen-xl mt-4 flex flex-wrap items-center justify-between mx-auto p-4 bg-stone-900 rounded-xl"
+            style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+            <a href="#" class="flex items-center">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><span
+                        class="font-mono text-2xl"><i class="fa-solid fa-won-sign text-yellow-400 animate-bounce"></i>re
+                        /School</span>
+            </a>
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:border-gray-700">
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 pl-3 pr-4 text-white md:bg-transparent hover:text-yellow-300 md:p-0  md:dark:bg-transparent duration-300">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="About.html"
+                            class="block py-2 pl-3 pr-4 text-white md:bg-transparent hover:text-yellow-300 md:p-0  md:dark:bg-transparent duration-300">About</a>
+                    </li>
+                    <li>
+                        <a href="Course.html"
+                            class="block py-2 pl-3 pr-4 text-white md:bg-transparent hover:text-yellow-300 md:p-0  md:dark:bg-transparent duration-300">Course</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-white md:bg-transparent hover:text-yellow-300 md:p-0  md:dark:bg-transparent duration-300">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-white md:bg-transparent hover:text-yellow-300 md:p-0  md:dark:bg-transparent duration-300">Plans</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-yellow-300 duration-300 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto dark:text-white  dark:focus:text-white dark:hover:bg-transparent">Pages
+                            <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg></button>
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-stone-800 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-white" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 bg-stone-800 dark:hover:text-yellow-400">Teachers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 bg-stone-800 dark:hover:text-yellow-400">Course
+                                        Detail </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 bg-stone-800 dark:hover:text-yellow-400">Single
+                                        post</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 bg-stone-800 dark:hover:text-yellow-400">404
+                                        Page</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 bg-stone-800 dark:hover:text-yellow-400">Coming
+                                        Soon</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="Contact.html"
+                            class="block py-2 pl-3 pr-4 text-white md:bg-transparent hover:text-yellow-300 md:p-0  md:dark:bg-transparent duration-300">Contact</a>
+                    </li>
+                    <div>
+                        <a href="#"
+                            class="font-mono font-bold text-white bg-[#ff8800] text-xl hover:bg-yellow-400 duration-500 sm:p-0 md:p-2 lg:p-6 rounded-sm">Start
+                            Now</a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--  -->
+    <section class="bg-slate-100 py-1 cursor-pointer">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+            <div class="mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div class="grid1-item text-left m-auto sm:mt-12">
+                    <div data-aos="fade-right">
+                        <div class="bg-yellow-400 w-16 h-2"></div>
+                        <h3 class="font-bold text-stone-700 text-[1.2rem]  mt-3 mb-2 md:text-[20px] lg:text-[28px]">
+                            Opening Up Your Mind</h3>
+                        <h1
+                            class="font-bold text-8xl text-[#00C072] text-[2.6rem] sm:text-[3.2rem] md:text-[4.6rem] lg:text-[7rem]">
+                            EDUCATION<br>
+                            <span class="text-stone-800">Is Life</span>
+                        </h1>
+                        <div class="mt-10">
+                            <a href="#"
+                                class="rounded-full py-3 px-10 bg-yellow-400 text-white shadow-xl hover:shadow-2xl duration-300 mr-6 sm:mr-5 hover:bg-yellow-600 font-semibold text-[10px] sm:text-[10px] md:text-[14px] lg:text-[13px] "><i
+                                    class="fa-solid fa-book"></i> All Course</a>
+                            <a href="#"
+                                class="rounded-full py-3 px-10 bg-stone-700 text-white shadow-xl hover:shadow-2xl duration-300 hover:bg-stone-900 font-semibold text-[10px] sm:text-[10px] md:text-[14px] lg:text-[13px]"><i
+                                    class="fa-solid fa-play"></i> Our Story</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1-item m-auto" data-aos="fade-right">
+                    <img src="img1.png" class="w-[50rem]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-20">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div class="grid1-item m-auto" data-aos="fade-left">
+                    <iframe
+                        class="sm:w-[400px] sm:h-[260px] w-[360px] h-[180px] lg:w-[460px] lg:h-[300px] md:w-[250px] md:h-[220px] rounded-2xl sm:mb-8 mb-10  md:mb-0 lg:mb-0"
+                        src="https://www.youtube.com/embed/KWTyC1WKdFw" allow=" autoplay;" allowfullscreen
+                        class="rounded-2xl" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;"></iframe>
+                </div>
+                <div class="grid1-item m-auto text-left" data-aos="fade-right">
+                    <div>
+                        <div class="bg-yellow-400 w-16 h-2"></div>
+                        <h3 class="font-bold text-stone-700 text-[1.2rem]  mt-3 mb-2 md:text-[20px] lg:text-[28px]">
+                            Technologies You Will Learn</h3>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper cursus arcu
+                            vitae
+                            <br>
+                            hendrerit. Cras gravida mollis pellentesque. <br>
+                            <br>
+                            Phasellus vulputate urna quis lectus tincidunt tempor. Cras vel facilisis ex, at commodo
+                            dui. Cras non nisi gravida, sodales lacus vel, scelerisque justo. Suspendisse vitae diam
+                            at diam consectetur elementum eget at ligula.
+                        </p>
+                        <div class="mt-8">
+                            <a href="#"
+                                class="rounded-full py-2 px-8 bg-yellow-400 text-white shadow-xl hover:shadow-2xl duration-300 hover:bg-yellow-600 font-semibold sm:text-[14px] md:text-[14px] lg:text-[16px]">Know
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-20 text-center text-black h-auto"
+        style="background: url(stacked-peaks-haikei.svg); height: auto ; background-repeat: no-repeat;background-size: cover;background-attachment: fixed;border-radius: 200px 0px 0px 0px;">
+        <div class="mx-auto max-w-7x1 px-6 sm:px-8 md:px-12">
+            <div class="m-auto">
+                <h2 class="mt-3 font-bold text-[40px] text-white">Why Choose Us</h2>
+                <div class="bg-yellow-400 w-16 h-2 m-auto" data-aos="fade-left"></div>
+                <p class="mx-auto mt-3 max-w-xl text-stone-800 font-semibold text-2xl">Course Features</p>
+            </div>
+            <div class="mt-24 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="grid1-item m-auto" data-aos="fade-right" >
+                    <div>
+                        <span><i
+                                class="fa-solid fa-trophy fa-2xl text-white bg-stone-900 py-9 px-5 rounded-full hover:bg-white hover:text-stone-900 duration-500 mb-5"></i></span>
+                        <h2 class="text-white font-semibold text-2xl sm:text-xl md:text-2xl lg:text-3xl">Best Industry
+                            Leaders</h2>
+                        <p class="text-white mt-3 font-semibold text-sm">Duis aliquam ac pretium molestie, arcu justo
+                            <br>mattis dui, sed mattis purus turpis nec leo.
+                            <br>
+                            Donec cursus ornare maximus et.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid1-item m-auto">
+                    <div>
+                        <span><i
+                                class="fa-solid fa-shoe-prints fa-rotate-270 fa-2xl text-white bg-stone-900 py-9 px-4 rounded-full hover:bg-white hover:text-stone-900 duration-500 mb-5"></i></span>
+                        <h2 class="text-white font-semibold text-2xl sm:text-xl md:text-2xl lg:text-3xl">Learn At Your
+                            Own Pace</h2>
+                        <p class="text-white mt-3 font-semibold text-sm">Curabitur at malesuada ipsum, id pulvinar enim.
+                            <br>
+                            Fusce purus mauris, auctor in quam ut,<br> interdum arcu, in aliquet arcu arcu a sapien.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid1-item m-auto" data-aos="fade-left">
+                    <div>
+                        <span><i
+                                class="fa-solid fa-award fa-2xl text-white bg-stone-900 py-9 px-6 rounded-full hover:bg-white hover:text-stone-900 duration-500 mb-5"></i></span>
+                        <h2 class="text-white font-semibold text-2xl sm:text-xl md:text-2xl lg:text-3xl">Professional
+                            Certification</h2>
+                        <p class="text-white mt-3 font-semibold text-sm">Morbi tristique, leo sit amet ultricies
+                            hendrerit, <br>orci arcu eleifend dolor. Aenean at turpis orci,<br> quis consectetur velit
+                            turpis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-20">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div class="grid1-item m-auto text-left" data-aos="fade-right">
+                    <div>
+                        <h3 class="font-bold text-emerald-500 mt-3 mb-2 md:text-[20px] lg:text-[36px]">
+                            Testimonials</h3>
+                        <div class="bg-yellow-400 w-16 h-2 mb-4"></div>
+
+                        <p class="font-bold mb-4 text-stone-800 text-2xl sm:text-[20px] md:text-xl lg:text-[1.6rem]">
+                            Reviews From Happy Learners</p>
+                        <p class="">Aenean consectetur gravida ultricies. Donec est ante, aliquam et tincidunt ut, <br>
+                            molestie auctor ipsum. Nam at nibh luctus, viverra ligula vitae, vulputate erat. Vivamus
+                            <br>
+                            vestibulum metus vel odio fermentum sodales.
+                            <br><br>
+                            Etiam aliquam scelerisque enim ac imperdiet. Nullam non neque odio. Nulla vel bibendum mi.
+                            <br>
+                            Cras ac vehicula purus. Phasellus nunc ligula.
+                        </p>
+                        <div class="mt-8">
+                            <a href="#"
+                                class="rounded-full py-2 px-8 bg-yellow-400 text-white shadow-xl hover:shadow-2xl duration-300 hover:bg-yellow-600 font-semibold sm:text-[14px] md:text-[14px] lg:text-[16px]">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1-item m-auto" data-aos="fade-left">
+                    <div class="w-[40rem] max-w-sm bg-white  rounded-lg shadow dark:bg-[#00E98F]">
+                        <div class="flex justify-end px-4 pt-4">
+                            <button id="dropdownButton" data-dropdown-toggle="dropdown"
+                                class="inline-block text-gray-500 dark:text-gray-400 bg-emerald-500 focus:ring-4 focus:outline-none focus:ring-emerald-600 dark:focus:ring-emerable-700 rounded-lg text-sm p-1.5"
+                                type="button">
+                                <span class="sr-only">Open dropdown</span>
+                                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdown"
+                                class="z-10 hidden text-base list-none divide-y divide-gray-100 rounded-lg shadow w-44 bg-emerald-400">
+                                <ul class="py-2" aria-labelledby="dropdownButton">
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-emerald-600 dark:text-white ">Edit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-emerald-600 dark:text-white ">Export
+                                            Data</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-emerald-600 dark:text-white ">Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center pb-10">
+                            <img class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb2Dn_G8xASQ7BUkvuedGcVufo-jyVKuOnYQ&usqp=CAU"
+                                alt="Bonnie image" />
+                            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Abdus Samad</h5>
+                            <span class="text-sm text-gray-500 dark:text-stone-700">Visual Designer</span>
+                            <div class="flex mt-4 space-x-3 md:mt-6">
+                                <a href="#"
+                                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-stone-700 rounded-lg hover:bg-stone-900">Add
+                                    friend</a>
+                                <a href="#"
+                                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-yellow-400 rounded-lg hover:bg-yellow-500">Message</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-20 text-center text-black h-auto">
+        <div class="mx-auto max-w-7x1 px-6 sm:px-8 md:px-12">
+            <div class="m-auto">
+                <h2 class="mt-3 font-bold text-[46px] text-stone-800">Popular Courses</h2>
+                <div class="bg-yellow-400 w-16 h-2 m-auto" data-aos="fade-down-right"></div>
+                <p class="mx-auto mt-3 max-w-xl text-stone-900 font-semibold text-2xl">Featured Learning Paths</p>
+            </div>
+            <div class="mt-24 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="grid1-item m-auto " data-aos="fade-right">
+                    <div class="border border-stone-800 rounded-xl w-[18rem] h-[22rem] shadow-2xl">
+                        <img src="Work_from_home-removebg-preview.png" alt="img" class="w-[20rem] -mt-10">
+                        <div class="m-auto text-center bg-[#FFAE10] p-7 -mt-11"
+                            style="border-radius: 0px 0px 10px 10px;">
+                            <h1 class="font-bold text-white font-mono">Front-End Engineer</h1>
+                            <p class="font-semibold text-white text-base">Beginner friendly, 121 Lessons</p>
+                            <div class="mt-4">
+                                <a href="#"
+                                    class="  bg-yellow-400 hover:bg-white hover:text-yellow-400 duration-500 hover:shadow-2xl rounded-full px-9 py-2 text-white font-semibold text-lg">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1-item m-auto " data-aos="fade-up">
+                    <div class="border border-stone-800 rounded-xl w-[18rem] h-[22rem] shadow-2xl">
+                        <img src="Work_from_home-removebg-preview.png" alt="img" class="w-[20rem] -mt-10">
+                        <div class="m-auto text-center bg-slate-100 p-7 -mt-11"
+                            style="border-radius: 0px 0px 10px 10px;">
+                            <h1 class="font-bold text-black font-mono">Full-Stack Engineer</h1>
+                            <p class="font-semibold text-black text-base">Beginner friendly, 145 Lessons</p>
+                            <div class="mt-4">
+                                <a href="#"
+                                    class="  bg-yellow-400 hover:bg-white hover:text-yellow-400 duration-500 hover:shadow-2xl rounded-full px-9 py-2 text-white font-semibold text-lg">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1-item m-auto " data-aos="fade-left">
+                    <div class="border border-stone-800 rounded-xl w-[18rem] h-[22rem] shadow-2xl">
+                        <img src="Work_from_home-removebg-preview.png" alt="img" class="w-[20rem] -mt-10">
+                        <div class="m-auto text-center bg-slate-100 p-7 -mt-11"
+                            style="border-radius: 0px 0px 10px 10px;">
+                            <h1 class="font-bold text-black font-mono">Back-End Engineer</h1>
+                            <p class="font-semibold text-black text-base">Beginner friendly, 100 Lessons</p>
+                            <div class="mt-4">
+                                <a href="#"
+                                    class="  bg-yellow-400 hover:bg-white hover:text-yellow-400 duration-500 hover:shadow-2xl rounded-full px-9 py-2 text-white font-semibold text-lg">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1-item m-auto " data-aos="fade-left">
+                    <div class="border border-stone-800 rounded-xl w-[18rem] h-[22rem] shadow-2xl">
+                        <img src="Work_from_home-removebg-preview.png" alt="img" class="w-[20rem] -mt-10">
+                        <div class="m-auto text-center bg-slate-100 p-7 -mt-11"
+                            style="border-radius: 0px 0px 10px 10px;">
+                            <h1 class="font-bold text-black font-mono">Computer Science</h1>
+                            <p class="font-semibold text-black text-base">Beginner friendly, 83 Lessons</p>
+                            <div class="mt-4">
+                                <a href="#"
+                                    class="  bg-yellow-400 hover:bg-white hover:text-yellow-400 duration-500 hover:shadow-2xl rounded-full px-9 py-2 text-white font-semibold text-lg">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1-item m-auto " data-aos="fade-down">
+                    <div class="border border-stone-800 rounded-xl w-[18rem] h-[22rem] shadow-2xl">
+                        <img src="Work_from_home-removebg-preview.png" alt="img" class="w-[20rem] -mt-10">
+                        <div class="m-auto text-center bg-slate-100 p-7 -mt-11"
+                            style="border-radius: 0px 0px 10px 10px;">
+                            <h1 class="font-bold text-black font-mono">Data Scientist</h1>
+                            <p class="font-semibold text-black text-base">Beginner friendly, 85 Lessons</p>
+                            <div class="mt-4">
+                                <a href="#"
+                                    class="  bg-yellow-400 hover:bg-white hover:text-yellow-400 duration-500 hover:shadow-2xl rounded-full px-9 py-2 text-white font-semibold text-lg">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1-item m-auto " data-aos="fade-right">
+                    <div class="border border-stone-800 rounded-xl w-[18rem] h-[22rem] shadow-2xl">
+                        <img src="Work_from_home-removebg-preview.png" alt="img" class="w-[20rem] -mt-10">
+                        <div class="m-auto text-center bg-slate-100 p-7 -mt-11"
+                            style="border-radius: 0px 0px 10px 10px;">
+                            <h1 class="font-bold text-black font-mono">Machine Learning</h1>
+                            <p class="font-semibold text-black text-base">Beginner friendly, 130 Lessons</p>
+                            <div class="mt-4">
+                                <a href="#"
+                                    class="  bg-yellow-400 hover:bg-white hover:text-yellow-400 duration-500 hover:shadow-2xl rounded-full px-9 py-2 text-white font-semibold text-lg">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="py-20 text-center text-black h-auto mt-60"
+        style="background: url(subtle-prism.svg); height: auto ; background-repeat: no-repeat;background-size: cover;background-attachment: fixed;border-radius: 200px 0px 0px 0px;">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+            <div class="text-left ml-48">
+                <h2 class="mt-3 font-bold text-[36px] text-white">Numbers Speak</h2>
+                <div class="bg-yellow-400 w-16 h-2 text-left "></div>
+                <p class=" mt-3 text-xs max-w-xl text-stone-800 font-semibold ">Cras vel facilisis ex, at commodo dui.
+                    Cras non nisi gravida, <br>sodales lacus vel, scelerisque justo. Suspendisse vitae diam at diam<br>
+                    consectetur elementum eget at ligula.</p>
+            </div>
+            <div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div class="grid1-item m-auto flex sm:mt-36">
+                    <div>
+                        <div class="float-left mr-4">
+                            <span><i
+                                    class="fa-solid fa-laptop-code fa-2xl text-white bg-yellow-400 px-3 py-8 rounded-full"></i></span>
+                        </div>
+                        <div class="float-right">
+                            <h2 class="font-bold text-white text-5xl cursor-pointer">116<sup>+</sup></h2>
+                            <p class="text-white font-semibold">Free Course</p>
+                        </div>
+                    </div>
+                    <div class="ml-14">
+                        <div class="float-left mr-4">
+                            <span><i
+                                    class="fa-solid fa-laptop-code fa-2xl text-white bg-yellow-400 px-3 py-8 rounded-full"></i></span>
+                        </div>
+                        <div class="float-right">
+                            <h2 class="font-bold text-white text-5xl cursor-pointer">116<sup>+</sup></h2>
+                            <p class="text-white font-semibold">Free Course</p>
+                        </div>
+                    </div>
+                    <div class="ml-14">
+                        <div class="float-left mr-4">
+                            <span><i
+                                    class="fa-solid fa-laptop-code fa-2xl text-white bg-yellow-400 px-3 py-8 rounded-full"></i></span>
+                        </div>
+                        <div class="float-right">
+                            <h2 class="font-bold text-white text-5xl cursor-pointer">116<sup>+</sup></h2>
+                            <p class="text-white font-semibold">Free Course</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1-item m-auto" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                    data-aos-offset="500" data-aos-duration="500">
+                    <img src="wepik-export-20230512114323llp4-modified.png" alt="img"
+                        class="w-[30rem] -mt-[30rem] lg:block md:hidden sm:hidden hidden">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <div class="w-full h-full flex justify-center items-center py-24">
+        <h1 id="typewriter" class="text-4xl font-bold text-[#FF9500]"></h1>
+    </div>
+    <script>
+        const words = ["Hello, User!", "Welcome to my website!", "This Completed Soon."];
+        let i = 0;
+        let j = 0;
+        let currentWord = "";
+        let isDeleting = false;
+        
+        function type() {
+          currentWord = words[i];
+          if (isDeleting) {
+            document.getElementById("typewriter").textContent = currentWord.substring(0, j-1);
+            j--;
+            if (j == 0) {
+              isDeleting = false;
+              i++;
+              if (i == words.length) {
+                i = 0;
+              }
+            }
+          } else {
+            document.getElementById("typewriter").textContent = currentWord.substring(0, j+1);
+            j++;
+            if (j == currentWord.length) {
+              isDeleting = true;
+            }
+          }
+          setTimeout(type, 100);
+        }
+        
+        type();
+        </script>
+
+
+    <section class="py-20 text-center text-black h-auto">
+        <div class="mx-auto max-w-7x1 px-6 sm:px-8 md:px-12">
+            <div class="m-auto">
+                <h2 class="mt-3 font-bold text-[3.7rem] mb-2 text-[#FEA101] cursor-pointer">Pricing & Plans</h2>
+                <div class="bg-yellow-400 w-16 h-2 m-auto" data-aos="fade-down-right"></div>
+                <p class="mx-auto mt-3 max-w-xl text-stone-900 font-bold text-3xl">Zero To Infinity</p>
+            </div>
+            <div class="mt-24 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="grid1-item  mx-auto" data-aos="fade-down-right">
+                    <div class="bg-neutral-800 h-[28rem] w-[20rem] shadow-shadow-2xl duration-700" id="shad">
+                        <div class="text-center text-white">
+                            <h1 class="text-5xl font-bold pt-14 mb-3">Started</h1>
+                            <div class="h-[.16rem] mb-2 w-[7rem] bg-white mx-auto"></div>
+                            <p class="font-bold">All Course Access</p>
+
+                            <div class="mt-9">
+                                <h4 class="text-[#FF930B] mb-6 font-bold text-7xl">$0</h4>
+                                <a href="#"
+                                    class="border border-[#FF930B] rounded-full py-1 px-6 font-semibold text-lg text-[#ff9308]">Free
+                                    Trial</a>
+                            </div>
+                            <div class="mt-6">
+                                <p class="font-semibold text-sm">Interactive lessons & daily<br> practice.</p>
+                                <div class="mt-6">
+                                    <a href="#"
+                                        class="bg-[#FF930B] hover:bg-yellow-400 text-stone-900 font-semibold text-sm rounded-full py-2 px-8">Choose</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1-item  mx-auto">
+                    <div class="bg-[#FEAE01] h-[28rem] w-[20rem] shadow-shadow-2xl duration-700" id="shad">
+                        <div class="text-center text-black">
+                            <h1 class="text-5xl text-stone-900 font-bold pt-14 mb-3">Pro</h1>
+                            <div class="h-[.16rem] mb-2 w-[7rem] bg-white mx-auto"></div>
+                            <p class="font-bold">All Course Access</p>
+
+                            <div class="mt-9">
+                                <h4 class="text-stone-900 mb-6 font-bold text-7xl">$89</h4>
+                                <a href="#"
+                                    class="border border-stone-900 rounded-full py-1 px-6 font-semibold text-lg text-stone-900">Per
+                                    Year</a>
+                            </div>
+                            <div class="mt-6">
+                                <p class="font-semibold text-sm">Learn, practice & apply job-ready<br> skills.</p>
+                                <div class="mt-6">
+                                    <a href="#"
+                                        class="bg-stone-900 hover:bg-yellow-300 text-[#ff930B] font-semibold text-sm rounded-full py-2 px-8">Choose</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1-item mx-auto" data-aos="fade-down-left">
+                    <div class="bg-neutral-800 h-[28rem] w-[20rem] shadow-shadow-2xl duration-700" id="shad">
+                        <div class="text-center text-white">
+                            <h1 class="text-5xl font-bold pt-14 mb-3">Team</h1>
+                            <div class="h-[.16rem] mb-2 w-[7rem] bg-white mx-auto"></div>
+                            <p class="font-bold">Up to 10 Members</p>
+
+                            <div class="mt-9">
+                                <h4 class="text-[#FF930B] mb-6 font-bold text-7xl">$199</h4>
+                                <a href="#"
+                                    class="border border-[#FF930B] rounded-full py-1 px-6 font-semibold text-lg text-[#ff9308]">Per
+                                    Year</a>
+                            </div>
+                            <div class="mt-6">
+                                <p class="font-semibold text-sm">Get Wire School for your whole <br>team..</p>
+                                <div class="mt-6">
+                                    <a href="#"
+                                        class="bg-[#FF930B] hover:bg-yellow-400 text-stone-900 font-semibold text-sm rounded-full py-2 px-8">Choose</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  -->
+    <section class="bg-white">
+        <div class="mx-auto max-w-[1340px] px-4 py-16 sm:px-6 sm:py-24 lg:me-0 lg:pe-0 lg:ps-8">
+            <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
+                <div class="max-w-xl text-left ltr:sm:text-left rtl:sm:text-right">
+                    <h2 class="text-[3.9rem] font-bold leading-[70px]">
+                        Newest <br>Post
+                    </h2>
+                    <div class="bg-yellow-400 w-16 h-2 text-left mt-2 mb-4" data-aos="fade-down-right"></div>
+                    <p class="mt-2 text-[20px] text-stone-900 font-semibold">
+                        Recently Updated
+                    </p>
+                    <div class="hidden lg:mt-8 lg:flex lg:gap-4">
+                        <button
+                            class="prev-button rounded-full border border-yellow-400 p-3 text-stone-800 hover:bg-yellow-500 hover:text-white">
+                            <span class="sr-only">Previous Slide</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-5 w-5 rtl:rotate-180">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+
+                        <button
+                            class="next-button rounded-full border border-yellow-400 p-3 text-stone-800 hover:bg-yellow-500 hover:text-white">
+                            <span class="sr-only">Next Slide</span>
+                            <svg class="h-5 w-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="-mx-6 lg:col-span-2 lg:mx-0">
+                    <div class="swiper-container !overflow-hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <blockquote class="flex h-full flex-col justify-between bg-white p-12">
+                                    <div>
+                                        <div class="flex gap-0.5 text-yellow-400">
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="mt-4">
+                                            <p class="text-2xl font-bold text-Yellow-400 sm:text-3xl">
+                                                Full Stack
+                                            </p>
+
+                                            <p class="mt-4 leading-relaxed text-gray-500">
+                                                No, Rose, they are not breathing. And they have no arms or
+                                                legs … Where are they? You know what? If we come across
+                                                somebody with no arms or legs, do we bother resuscitating
+                                                them? I mean, what quality of life do we have there?
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <footer class="mt-8 text-sm text-stone-800 font-bold">
+                                        &mdash; Harry - Ptr
+                                    </footer>
+                                </blockquote>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <blockquote class="flex h-full flex-col justify-between bg-white p-12">
+                                    <div>
+                                        <div class="flex gap-0.5 text-yellow-400">
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="mt-4">
+                                            <p class="text-2xl font-bold text-Yellow-400 sm:text-3xl">
+                                                Date Science
+                                            </p>
+
+                                            <p class="mt-4 leading-relaxed text-gray-500">
+                                                No, Rose, they are not breathing. And they have no arms or
+                                                legs … Where are they? You know what? If we come across
+                                                somebody with no arms or legs, do we bother resuscitating
+                                                them? I mean, what quality of life do we have there?
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <footer class="mt-8 text-sm text-stone-800 font-bold">
+                                        &mdash; Willam Scott
+                                    </footer>
+                                </blockquote>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <blockquote class="flex h-full flex-col justify-between bg-white p-12">
+                                    <div>
+                                        <div class="flex gap-0.5 text-yellow-400">
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="mt-4">
+                                            <p class="text-2xl font-bold text-Yellow-400 sm:text-3xl">
+                                                Machine Learning
+                                            </p>
+
+                                            <p class="mt-4 leading-relaxed text-gray-500">
+                                                No, Rose, they are not breathing. And they have no arms or
+                                                legs … Where are they? You know what? If we come across
+                                                somebody with no arms or legs, do we bother resuscitating
+                                                them? I mean, what quality of life do we have there?
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <footer class="mt-8 text-sm text-stone-800 font-bold">
+                                        &mdash; Michael Scott
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 flex justify-center gap-4 lg:hidden">
+                <button aria-label="Previous slide"
+                    class="prev-button rounded-full border border-pink-600 p-4 text-pink-600 hover:bg-pink-600 hover:text-white">
+                    <svg class="h-5 w-5 -rotate-180 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                    </svg>
+                </button>
+
+                <button aria-label="Next slide"
+                    class="next-button rounded-full border border-pink-600 p-4 text-pink-600 hover:bg-pink-600 hover:text-white">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-white py-20 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="bg-yellow-400 w-16 h-2 mx-auto"></div>
+            <h2 class="text-center text-2xl font-bold leading-8 text-stone-900">Trusted By Leading Brands</h2>
+            <div
+                class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                    src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor"
+                    width="158" height="48">
+                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                    src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158"
+                    height="48">
+                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                    src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158"
+                    height="48">
+                <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+                    src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158"
+                    height="48">
+                <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                    src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158"
+                    height="48">
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <section class="bg-white py-20 text-center" id="foot">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div class="grid1-item m-auto text-left">
+                    <div>
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><span
+                                class="font-mono text-2xl"><i class="fa-solid fa-won-sign text-yellow-400 "></i>re
+                                /School
+                            </span>
+                        </span>
+                        <div class="list-none mt-4 ">
+                            <li>
+                                <span class="text-white font-semibold font-mono text-sm">
+                                    <i class="fa-solid fa-phone text-white fa-sm"></i> <span>+1 910-564-64863</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="text-white font-semibold font-mono text-sm">
+                                    <i class="fa-solid fa-envelope text-white fa-sm"></i> <span>info@sam.com</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="text-white font-semibold font-mono text-sm">
+                                    <i class="fa-solid fa-map-location-dot text-white fa-sm"></i> <span>123 Fifth
+                                        Avenue,New York,NY
+                                        10160</span>
+                                </span>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1-item ">
+                    <div class="text-left">
+                        <div class="bg-yellow-400 w-16 h-2 text-left "></div>
+                        <h2 class="font-semibold text-[30px] text-white">Our Newsletter</h2>
+
+                        <form>
+                            <label for="search"
+                                class="mb-2 text-sm font-semibold text-white sr-only ">Search</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    
+                                </div>
+                                <input type="search" id="search"
+                                    class="block w-full p-4 pl-10 text-sm rounded-lg bg-stone-600 dark:placeholder-white "
+                                    placeholder="Search" required>
+                                <button type="submit"
+                                    class="text-black absolute right-2.5 bottom-2.5 font-medium rounded-lg text-sm px-4 py-2 border border-stone-900 bg-yellow-400">Search</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!--  -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 32,
+            autoplay: {
+                delay: 8000,
+            },
+            breakpoints: {
+                640: {
+                    centeredSlides: true,
+                    slidesPerView: 1.25,
+                },
+                1024: {
+                    centeredSlides: false,
+                    slidesPerView: 1.5,
+                },
+            },
+            navigation: {
+                nextEl: '.next-button',
+                prevEl: '.prev-button',
+            },
+        })
+    })
+</script>
+
+</html>

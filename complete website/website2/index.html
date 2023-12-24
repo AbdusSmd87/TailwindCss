@@ -1,0 +1,486 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    * {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="px-2 sm:px-4 py-2.5  fixed w-full z-20 top-0 left-0 bg-black">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="deskism.com" class="flex items-center">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><i
+                        class="fa-2xs fa-solid fa-shield-halved text-yellow-400"></i> de<span
+                        class="text-yellow-500">s<span class="text-red-600">k</span>i</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-rose-500 dark:hover:bg-rose-600 dark:focus:ring-rose-800">Start
+                    free Trail</button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 mt-4 bg-black md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+                    <li>
+                        <a href="#Home"
+                            class="block py-2 pl-3 pr-4 text-white bg-black rounded md:bg-transparent md:p-0 dark:text-white">Home</a>
+                    </li>
+                    <li>
+                        <a href="#Features"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Features</a>
+                    </li>
+                    <li>
+                        <a href="#Feedback"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Feedback</a>
+                    </li>
+                    <li>
+                        <a href="#Contact us"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact
+                            us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end -->
+
+
+    <!-- land -->
+    <section class=" text-center bg-black py-20 " id="Home">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12 h-[360px]" data-aos="fade-up">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 mt-32">
+                <div class="grid1-item text-white">
+                    <h1 class="font-bold sm:text-[3.9em]">Building website <br><span
+                            class="text-red-500">products</span>,<span
+                            class="text-yellow-500">brands</span>&<br>expereince</h1>
+                    <p class="font-normal text-[16px] mt-4">Make stunning videos with animation, staock footage,
+                        and
+                        photos.
+                    </p>
+                    <div class="mt-4">
+                        <a href="#"
+                            class="rounded-full border px-4 py-2 hover:border-red-600 hover:text-yellow-400 font-semibold">Get
+                            Started free <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+    <!--  -->
+    <section class="py-20 text-center" id="Home">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+                <div class="grid1-item font-semibold text-black" data-aos="fade-left">
+                    <h1 class="text-4xl">3.5K</h1>
+                    <p class="text-1xl">Job done successfully</p>
+                </div>
+                <div class="grid1-item font-semibold text-black" data-aos="fade-up">
+                    <h1 class="text-4xl">20million</h1>
+                    <p class="text-1xl">3280 avg rating</p>
+                </div>
+                <div class="grid1-item font-semibold text-black" data-aos="fade-right">
+                    <h1 class="text-4xl">3000+</h1>
+                    <p class="text-1xl">using Deski</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+
+
+
+    <!-- Features-->
+    <section class="py-20 text-center" id="Features">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+            <div class="font-semibold text-center text-black" data-aos="fade-down">
+                <p class="text-gray-300">Features</p>
+                <h1 class="text-5xl"><i class="fa-solid fa-share text-yellow-400"></i> We've ton of features for give
+                    <br>you the best website.<i class="fa-solid fa-share text-red-600"
+                        style="transform: rotateY(180deg);"></i>
+                </h1>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-32">
+                <div class="grid1-item text-black m-auto" data-aos="fade-left">
+                    <i class="fa-solid fa-copy text-[28px]"></i>
+                    <h1 class="font-bold text-[22px]">Drag & Drop</h1>
+                    <p class="text-[14px] mt-2">the intuitive and flexible drag & drop <br>editor saves time on
+                        development <br>with great speed.</p>
+                </div>
+                <div class="grid1-item text-black m-auto" data-aos="fade-up">
+                    <i class="fa-solid fa-laptop-file text-[28px]"></i>
+                    <h1 class="font-bold text-[22px]">Edited by Device</h1>
+                    <p class="text-[14px] mt-2">the intuitive and flexible drag & drop <br>editor saves time on
+                        development <br>with great speed.</p>
+                </div>
+                <div class="grid1-item text-black m-auto" data-aos="fade-right">
+                    <i class="fa-solid fa-square-check text-[28px]"></i>
+                    <h1 class="font-bold text-[22px]">Globel Design</h1>
+                    <p class="text-[14px] mt-2">the intuitive and flexible drag & drop <br>editor saves time on
+                        development <br>with great speed.</p>
+                </div>
+                <div class="grid1-item text-black m-auto" data-aos="fade-left">
+                    <i class="fa-solid fa-paper-plane text-[28px]"></i>
+                    <h1 class="font-bold text-[22px]">App integration</h1>
+                    <p class="text-[14px] mt-2">the intuitive and flexible drag & drop <br>editor saves time on
+                        development <br>with great speed.</p>
+                </div>
+                <div class="grid1-item text-black m-auto" data-aos="fade-down">
+                    <i class="fa-solid fa-envelope text-[28px]"></i>
+                    <h1 class="font-bold text-[22px]">developer Mode</h1>
+                    <p class="text-[14px] mt-2">the intuitive and flexible drag & drop <br>editor saves time on
+                        development <br>with great speed.</p>
+                </div>
+                <div class="grid1-item text-black m-auto" data-aos="fade-right">
+
+
+
+                    <i class="fa-solid fa-address-book text-[28px]"></i>
+                    <h1 class="font-bold text-[22px]">Content Import</h1>
+                    <p class="text-[14px] mt-2">the intuitive and flexible drag & drop <br>editor saves time on
+                        development <br>with great speed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Features -->
+
+
+
+    <!-- Email -->
+    <section class="py-20 ">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12 h-[360px]">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+                <div class="grid1-item" data-aos="fade-up">
+                    <img src="2985937-removebg-preview.png">
+                </div>
+                <div class="grid1-item text-black float-left text-left" data-aos="fade-down">
+                    <h4 class="text-[20px] underline font-bold">Email & SMS BROADCAST</h4>
+                    <h1 class="text-[2.5rem] font-bold">We have email & sms <br>Vroadcast for you.</h1>
+                    <p class="font-medium mt-3">Broadcast and email is best use for something <br>announcing significant
+                        changes.</p>
+                    <div class="mt-5">
+                        <b class="font-semibold text-[11px]"><i class="fa-solid fa-check"></i> Makes them <u
+                                class="text-yellow-500">purchase</u> your products. services and quis interact website
+                            due.</b>
+                        <h4 class="font-semibold text-[11px]"><i class="fa-solid fa-check"></i> Holds and catches their
+                            <u class="text-yellow-500">attention</u>lorem.
+                        </h4>
+                        <b class="font-semibold text-[11px]"><i class="fa-solid fa-check"></i> Diverts them to your
+                            brand.</b>
+                        <div class="mt-5">
+                            <a href="#"
+                                class="rounded-full border border-gray-900 text-white bg-gray-900 font-semibold px-6 py-2 text-sm hover:text-black hover:bg-transparent duration-700">Learn
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  end Emal-->
+
+
+
+    <!--  -->
+    <section class="py-20 text-center" id="Feedback">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 h-[300px]">
+                <div class="grid1-item " data-aos="fade-left">
+                    <i class="fa-solid fa-envelope text-[28px] text-yellow-500"></i>
+                    <h1 class="font-bold text-[20px]">Email & Sms Campaige</h1>
+                    <p class="font-normal text-[15px]">Check how the message that you<br>send will appears on the device
+                        of your <br>reciept in real-time.</p>
+                </div>
+                <div class="grid1-item " data-aos="fade-down">
+                    <i class="fa-solid fa-cloud text-[28px] text-yellow-500"></i>
+                    <h1 class="font-bold text-[20px]">Simple to Use</h1>
+                    <p class="font-normal text-[15px]">Keep a track on ral-time performance<br>While analysing the
+                        success of your mail<br>campaiqns.</p>
+                </div>
+                <div class="grid1-item " data-aos="fade-right">
+                    <i class="fa-solid fa-user text-[28px] text-yellow-500"></i>
+                    <h1 class="font-bold text-[20px]">Increase Leads</h1>
+                    <p class="font-normal text-[15px]">Modify and GIFs, imgae<br>button,links and the custom
+                        user<br>element in your message.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+
+
+    <!-- made -->
+    <section class="py-20 ">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+                <div class="grid1-item text-black float-left text-left m-auto" data-aos="fade-up">
+                    <h4 class="text-[20px] underline font-bold">PRE-MADE TEMPLATE</h4>
+                    <h1 class="text-[2.5rem] font-bold">Pre-Made Stunning<br>Templates.</h1>
+                    <p class="font-medium mt-5">Feel free to choose from our huge selection of <br>Templates,customize
+                        easily and create a stunning <br>website for you customres.</p>
+                    <div class="mt-8">
+                        <a href="#"
+                            class="rounded-full border border-gray-900 text-white bg-gray-900 font-semibold px-6 py-2 text-sm hover:text-black hover:bg-transparent duration-700">Learn
+                            More</a>
+                    </div>
+                </div>
+                <div class="grid1-item" data-aos="fade-down">
+                    <img src="2985937-removebg-preview.png">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--  end made-->
+
+
+
+    <!-- boxs -->
+    <section class="py-20 text-center">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="grid1-item text-black text-left m-auto rounded-md shadow-md w-[17rem] h-[10rem]"
+                    data-aos="fade-left">
+                    <i class="fa-brands fa-slack text-yellow-500 ml-8 mt-3 text-[20px]"></i>
+                    <h1 class="text-[1.2rem] font-medium mx-7 mt-4">Easy Customize</h1>
+                    <p class="text-[12px] font-normal  mx-7">Keep a track on ral-time perfomance <br>while analying the
+                        success of your <br>mail campaigns</p>
+                </div>
+                <div class="grid1-item text-black text-left m-auto rounded-md shadow-md w-[17rem] h-[10rem]"
+                    data-aos="fade-down">
+                    <i class="fa-brands fa-slack text-yellow-500 ml-8 mt-3 text-[20px]"></i>
+                    <h1 class="text-[1.2rem] font-medium mx-7 mt-4">Easy Customize</h1>
+                    <p class="text-[12px] font-normal  mx-7">Keep a track on ral-time perfomance <br>while analying the
+                        success of your <br>mail campaigns</p>
+                </div>
+                <div class="grid1-item text-black text-left m-auto rounded-md shadow-md w-[17rem] h-[10rem]"
+                    data-aos="fade-right">
+                    <i class="fa-brands fa-slack text-yellow-500 ml-8 mt-3 text-[20px]"></i>
+                    <h1 class="text-[1.2rem] font-medium mx-7 mt-4">Easy Customize</h1>
+                    <p class="text-[12px] font-normal  mx-7">Keep a track on ral-time perfomance <br>while analying the
+                        success of your <br>mail campaigns</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <section class="py-20 text-center">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 text-center">
+                <div class="grid1-item text-black m-auto">
+                    <p class="text-gray-300">Testimonails</p>
+                    <h1 class="text-[2.4rem] font-bold">Client love us & we Love them.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="text-gray-600 body-font -mt-32">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap ">
+                <div class="p-4 md:w-1/2 w-full" data-aos="fade-left">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                            carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/106x106"
+                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                                <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 w-full" data-aos="fade-right">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                            carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/107x107"
+                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+                                <span class="text-gray-500 text-sm">DESIGNER</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- land -->
+       <section class=" text-center bg-black py-20 " id="Home">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12 h-[360px]" data-aos="fade-up">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+                <div class="grid1-item text-white">
+                    <h1 class="font-bold sm:text-[3.9em]">200k+ Customers<br><span
+                            class="text-red-500">have our deski</span>,<span
+                            class="text-yellow-500">Try</span>it now!</h1>
+                    <p class="font-normal text-[16px] mt-4">Try it risk free- We don't charge cancellation fees..
+                    </p>
+                    <div class="mt-6">
+                        <a href="#"
+                            class="rounded-full border px-4 py-2 hover:border-red-600 hover:text-yellow-400 font-semibold">Get
+                            Let's Get Started <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+
+    <footer class="text-gray-600 body-font mt-32" id="Contact us">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap md:text-left text-center order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">LINKS</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Home</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Pricing</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">About us</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Careers</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">LEGAL</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Teams of use</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Tearms & condition</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Privacy policy</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Cookie policy</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Services</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">App</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Web</a>
+                </li>
+               
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">NEWSLETTER</h2>
+              <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+                <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                  <label for="footer-field" class="leading-7 text-sm text-gray-600">JOIN NOW</label>
+                  <input type="text" id="footer-field"placeholder="Enter Email" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-slate-900 border-0 py-2 px-6 focus:outline-none hover:bg-slate-800 rounded">Button</button>
+              </div>
+              <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
+                <br class="lg:block hidden">waistcoat green juice
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            
+              <span class="ml-3 text-xl">deski</span>
+            </a>
+            
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+</body>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

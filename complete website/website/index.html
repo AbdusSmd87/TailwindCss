@@ -1,0 +1,610 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="bg-green-100 min-h-screen">
+
+        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+              <a href="#" class="flex items-center">
+                  <span class="self-center text-xl font-bold whitespace-nowrap text-yellow-400">CourTry</span>
+              </a>
+              <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+              </button>
+              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
+                  <li>
+                    <a href="#Home" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+                  </li>
+                  <li>
+                    <a href="#Features" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Features</a>
+                  </li>
+                  <li>
+                    <a href="#Membership" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Membership</a>
+                  </li>
+                  <li>
+                    <a href="#Testimonals" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Testimonals</a>
+                  </li>
+                  <li>
+                    <a href="#Pricing" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+
+
+        <section class="py-20 text-center" id="Home">
+            <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-10">
+                    <div class="grid1-item" data-aos="fade-up">
+                        <h1 class="text-gray-900 font-bold text-left text-[3.6rem]">Study Together <br>With <span
+                                class="text-yellow-400">CourTry</span> <br>Anywhere</h1>
+                        <p class="text-left mt-3 font-medium text-[14px]">Online Courses are a forn of a-learing . The
+                            concept of an online course <br>according to (Picciano 2020)is to present learning material
+                            online.</p>
+                        <div class="mt-5 text-left">
+                            <button
+                                class="rounded-full py-3 px-7 bg-green-500 text-white font-semibold hover:bg-transparent hover:border-green-700 border hover:text-black duration-500">Join
+                                Class</button>
+                            <button class="rounded-full py-3 px-7 bg-white text-black font-semibold">Get
+                                Started</button>
+                        </div>
+                        <div class="text-left mt-10">
+                            <span class="text-black font-semibold text-[12px]"><i class="fa-solid fa-circle-check"></i>
+                                Fleksibei Class</span>
+                            <span class="text-black font-semibold text-[12px] ml-6"><i
+                                    class="fa-solid fa-circle-check"></i> Experienced mentor</span>
+                        </div>
+                    </div>
+                    <div class="grid1-item " data-aos="fade-down">
+                        <img src="4c9bee47-c896-43ab-aa49-d8abf4264b39.png" class="rounded-full bg-white">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 text-center">
+            <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+                    <div class="grid1-item bg-slate-900 w-max rounded-md h-[12rem] p-5 hover:bg-green-500 duration-500 m-auto"
+                        data-aos="fade-left">
+                        <i class="fa-2x fa-solid fa-shield-heart text-white"></i>
+                        <p class="text-white mt-8 font-semibold">Learn the skills that <br>matter most with over
+                            <br>155,000 video courses.
+                        </p>
+                    </div>
+                    <div class="grid1-item  bg-slate-900 w-max rounded-md h-[12rem] p-5 hover:bg-green-500 duration-500 m-auto"
+                        data-aos="fade-up">
+                        <i class="fa-2x fa-solid fa-shield-heart text-white"></i>
+                        <p class="text-white mt-8 font-semibold">Choose courses taugh<br>by real-worldexperts<br>who
+                            will broaden.</p>
+                    </div>
+                    <div class="grid1-item bg-slate-900 w-max rounded-md h-[12rem] p-5 hover:bg-green-500 duration-500 m-auto"
+                        data-aos="fade-right">
+                        <i class="fa-2x fa-solid fa-shield-heart text-white"></i>
+                        <p class="text-white mt-8 font-semibold">Learn at your own pace.<br>with lifetime access
+                            on<br>mobile and desktop.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="bg-slate-50 min-h-screen" id="Features">
+        <section class="py-20 text-center">
+            <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-10 ">
+                    <div class="grid1-item text-left m-auto">
+                        <h1 class="text-slate-900 font-bold text-[2.4rem]"><span
+                                class="rounded-full bg-yellow-400 px-2 py-1">E</span>xplore featured<br>courses</h1>
+                    </div>
+                    <div class="grid1-item text-right m-auto">
+                        <a href="#"
+                            class="border rounded-md border-slate-700 px-7 py-2 font-semibold hover:bg-slate-800 hover:text-white">View
+                            All</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 text-center">
+            <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+                    <div class="grid1-item bg-slate-50 w-max rounded-md h-[8rem] p-5 m-auto shadow-lg"
+                        data-aos="fade-right">
+                        <div class="float-left">
+                            <img src="https://banner2.cleanpng.com/20180331/ecq/kisspng-corporate-branding-brand-equity-branding-agency-bu-branding-5abfa663ea40a6.4948706615225094119595.jpg"
+                                class="w-20 mt-5">
+                        </div>
+                        <div class="float-right text-left">
+                            <h3 class="text-slate-900 font-semibold text-[15px]">Figma UI Design</h3>
+                            <h5 class="text-left font-normal">Ari Setiwan</h5>
+                            <div>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-slate-600"></i>
+                            </div>
+                            <p class="text-slate-400 text-[11px]">1,200 (Comment)</p>
+                        </div>
+                    </div>
+                    <div class="grid1-item bg-slate-50 w-max rounded-md h-[8rem] p-5 m-auto shadow-lg"
+                        data-aos="fade-up">
+                        <div class="float-left">
+                            <img src="https://banner2.cleanpng.com/20180331/ecq/kisspng-corporate-branding-brand-equity-branding-agency-bu-branding-5abfa663ea40a6.4948706615225094119595.jpg"
+                                class="w-20 mt-5">
+                        </div>
+                        <div class="float-right text-left">
+                            <h3 class="text-slate-900 font-semibold text-[15px]">Figma UI Design</h3>
+                            <h5 class="text-left font-normal">Ari Setiwan</h5>
+                            <div>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-slate-600"></i>
+                            </div>
+                            <p class="text-slate-400 text-[11px]">1,200 (Comment)</p>
+                        </div>
+                    </div>
+                    <div class="grid1-item bg-slate-50 w-max rounded-md h-[8rem] p-5 m-auto shadow-lg"
+                        data-aos="fade-left">
+                        <div class="float-left">
+                            <img src="https://banner2.cleanpng.com/20180331/ecq/kisspng-corporate-branding-brand-equity-branding-agency-bu-branding-5abfa663ea40a6.4948706615225094119595.jpg"
+                                class="w-20 mt-5">
+                        </div>
+                        <div class="float-right text-left">
+                            <h3 class="text-slate-900 font-semibold text-[15px]">Figma UI Design</h3>
+                            <h5 class="text-left font-normal">Ari Setiwan</h5>
+                            <div>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-slate-600"></i>
+                            </div>
+                            <p class="text-slate-400 text-[11px]">1,200 (Comment)</p>
+                        </div>
+                    </div>
+                    <div class="grid1-item bg-slate-50 w-max rounded-md h-[8rem] p-5 m-auto shadow-lg"
+                        data-aos="fade-right">
+                        <div class="float-left">
+                            <img src="https://banner2.cleanpng.com/20180331/ecq/kisspng-corporate-branding-brand-equity-branding-agency-bu-branding-5abfa663ea40a6.4948706615225094119595.jpg"
+                                class="w-20 mt-5">
+                        </div>
+                        <div class="float-right text-left">
+                            <h3 class="text-slate-900 font-semibold text-[15px]">Figma UI Design</h3>
+                            <h5 class="text-left font-normal">Ari Setiwan</h5>
+                            <div>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-slate-600"></i>
+                            </div>
+                            <p class="text-slate-400 text-[11px]">1,200 (Comment)</p>
+                        </div>
+                    </div>
+                    <div class="grid1-item bg-slate-50 w-max rounded-md h-[8rem] p-5 m-auto shadow-lg"
+                        data-aos="fade-up">
+                        <div class="float-left">
+                            <img src="https://banner2.cleanpng.com/20180331/ecq/kisspng-corporate-branding-brand-equity-branding-agency-bu-branding-5abfa663ea40a6.4948706615225094119595.jpg"
+                                class="w-20 mt-5">
+                        </div>
+                        <div class="float-right text-left">
+                            <h3 class="text-slate-900 font-semibold text-[15px]">Figma UI Design</h3>
+                            <h5 class="text-left font-normal">Ari Setiwan</h5>
+                            <div>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-slate-600"></i>
+                            </div>
+                            <p class="text-slate-400 text-[11px]">1,200 (Comment)</p>
+                        </div>
+                    </div>
+                    <div class="grid1-item bg-slate-50 w-max rounded-md h-[8rem] p-5 m-auto shadow-lg"
+                        data-aos="fade-left">
+                        <div class="float-left">
+                            <img src="https://banner2.cleanpng.com/20180331/ecq/kisspng-corporate-branding-brand-equity-branding-agency-bu-branding-5abfa663ea40a6.4948706615225094119595.jpg"
+                                class="w-20 mt-5">
+                        </div>
+                        <div class="float-right text-left">
+                            <h3 class="text-slate-900 font-semibold text-[15px]">Figma UI Design</h3>
+                            <h5 class="text-left font-normal">Ari Setiwan</h5>
+                            <div>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-2xs fa-solid fa-star text-slate-600"></i>
+                            </div>
+                            <p class="text-slate-400 text-[11px]">1,200 (Comment)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-20 text-center bg-sky-200" id="Membership">
+            <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-10 ">
+                    <div class="grid1-item m-auto float-right text-left" data-aos="fade-right">
+                        <div>
+                            <img src="https://www.marketingjournal.org/wp-content/uploads/2018/04/Brands.png"
+                                alt="img-3" class="w-[30rem]">
+                        </div>
+                    </div>
+                    <div class="grid1-item m-auto float-right text-left" data-aos="fade-left">
+                        <h1 class="text-slate-900 font-bold text-[39px]">Join Membership <br>CourTry</h1>
+                        <p>dolor sit amet consectetur adipisicing elit. Maxime quos enim minima id tenetur</p>
+                        <div class="mt-12">
+                            <a href="#"
+                                class="rounded-full bg-green-600 text-white font-semibold py-3 px-10 text-[16px]">Continue
+                                to Membership</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="bg-gray-100" id="Testimonals">
+            <div class="mx-auto max-w-[1340px] px-4 py-16 sm:px-6 sm:py-24 lg:mr-0 lg:pl-8 lg:pr-0">
+                <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
+                    <div class="max-w-xl text-center sm:text-left">
+                        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+                            Teatimonails <br>from <span class="text-yellow-400">CourTry</span> <br>member
+                        </h2>
+
+                        <p class="mt-4 text-gray-500 font-bold">
+                            Here are the given by some of our customres <br>we hope you can also be a part of us learn
+                            together.
+                        </p>
+
+                        <div class="hidden lg:mt-8 lg:flex lg:gap-4">
+                            <button
+                                class="prev-button rounded-full border border-slate-600 p-3 text-slate-600 hover:bg-slate-600 hover:text-white">
+                                <span class="sr-only">Previous Slide</span>
+                                <svg class="h-5 w-5 -rotate-180 transform" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" />
+                                </svg>
+                            </button>
+
+                            <button
+                                class="next-button rounded-full border border-slate-600 p-3 text-slate-600 hover:bg-slate-600 hover:text-white">
+                                <span class="sr-only">Next Slide</span>
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="-mx-6 lg:col-span-2 lg:mx-0">
+                        <div class="swiper-container !overflow-hidden">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <blockquote class="flex h-full flex-col justify-between bg-white p-12">
+                                        <div>
+                                            <div class="flex gap-0.5 text-yellow-400">
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <p class="text-2xl font-bold text-slate-600 sm:text-3xl">
+                                                    Stayin' Alive
+                                                </p>
+
+                                                <p class="mt-4 leading-relaxed text-gray-500">
+                                                    No, Rose, they are not breathing. And they have no arms or
+                                                    legs … Where are they? You know what? If we come across
+                                                    somebody with no arms or legs, do we bother resuscitating
+                                                    them? I mean, what quality of life do we have there?
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <footer class="mt-8 text-sm text-gray-500">
+                                            &mdash; Michael Scott
+                                        </footer>
+                                    </blockquote>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <blockquote class="flex h-full flex-col justify-between bg-white p-12">
+                                        <div>
+                                            <div class="flex gap-0.5 text-yellow-400">
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <p class="text-2xl font-bold text-slate-600 sm:text-3xl">
+                                                    Stayin' Alive
+                                                </p>
+
+                                                <p class="mt-4 leading-relaxed text-gray-500">
+                                                    No, Rose, they are not breathing. And they have no arms or
+                                                    legs … Where are they? You know what? If we come across
+                                                    somebody with no arms or legs, do we bother resuscitating
+                                                    them? I mean, what quality of life do we have there?
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <footer class="mt-8 text-sm text-gray-500">
+                                            &mdash; Michael Scott
+                                        </footer>
+                                    </blockquote>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <blockquote class="flex h-full flex-col justify-between bg-white p-12">
+                                        <div>
+                                            <div class="flex gap-0.5 text-yellow-400">
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <p class="text-2xl font-bold text-slate-600 sm:text-3xl">
+                                                    Stayin' Alive
+                                                </p>
+
+                                                <p class="mt-4 leading-relaxed text-gray-500">
+                                                    No, Rose, they are not breathing. And they have no arms or
+                                                    legs … Where are they? You know what? If we come across
+                                                    somebody with no arms or legs, do we bother resuscitating
+                                                    them? I mean, what quality of life do we have there?
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <footer class="mt-8 text-sm text-gray-500">
+                                            &mdash; Michael Scott
+                                        </footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 flex justify-center gap-4 lg:hidden">
+                    <button aria-label="Previous slide"
+                        class="prev-button rounded-full border  p-4 text-slate-600 hover:bg-slate-900 hover:text-white">
+                        <svg class="h-5 w-5 -rotate-180 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </button>
+
+                    <button aria-label="Next slide"
+                        class="next-button rounded-full border border-slate-600 p-4 text-slate-600 hover:bg-slate-900 hover:text-white">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                new Swiper('.swiper-container', {
+                    loop: true,
+                    slidesPerView: 1,
+                    spaceBetween: 32,
+                    autoplay: {
+                        delay: 8000,
+                    },
+                    breakpoints: {
+                        640: {
+                            centeredSlides: true,
+                            slidesPerView: 1.25,
+                        },
+                        1024: {
+                            centeredSlides: false,
+                            slidesPerView: 1.5,
+                        },
+                    },
+                    navigation: {
+                        nextEl: '.next-button',
+                        prevEl: '.prev-button',
+                    },
+                })
+            })
+        </script>
+
+    </div>
+
+
+    <section class="py-20 text-center bg-white" id="Pricing">
+        <div class="mx-auto max-w-full px-6 sm:px-8 md:px-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 ">
+                <div class="grid1-item m-auto shadow-lg" data-aos="fade-right">
+                    <div class="bg-sky-300 p-5 rounded-md text-white">
+                        <h2 class="font-semibold text-[20px]"> Basis Plan</h2>
+                        <h1 class="mt-4 text-black text-[20px] font-bold">$20<span class="text-[12px]">/month</span>
+                        </h1>
+                        <div class="mt-5">
+                            <p class="text-black font-semibold text-[14px]"><i class="fa-solid fa-check"></i> Can access
+                                some videos</p>
+                            <p class="text-white font-semibold text-[14px]"><i class="fa-solid fa-check"></i> Question
+                                and answer question</p>
+                            <p class="text-black font-semibold text-[14px]"><i class="fa-solid fa-circle-xmark"></i> Video desicusin of question</p>
+                            <p class="text-white font-semibold text-[14px]"><i class="fa-solid fa-circle-xmark"></i> Departmental consulting and <br>couseling
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1-item m-auto shadow-lg " data-aos="fade-down">
+                    <div class="p-5 rounded-md text-black bg-slate-50">
+                        <h2 class="font-semibold text-[20px]"> Favorite Plan</h2>
+                        <h1 class="mt-4 text-black text-[20px] font-bold">$20<span class="text-[12px]">/month</span>
+                        </h1>
+                        <div class="mt-5">
+                            <p class="text-black font-semibold text-[12px]"><i class="fa-solid fa-check"></i> Can access
+                                some videos</p>
+                            <p class="text-black font-semibold text-[12px]"><i class="fa-solid fa-check"></i> Question
+                                and answer question</p>
+                            <p class="text-black font-semibold text-[12px]"><i class="fa-solid fa-check"></i> Video desicusin of question</p>
+                            <p class="text-black font-semibold text-[12px]"><i class="fa-solid fa-check"></i> Departmental consulting and <br>couseling
+                            </p>
+                            <p class="text-black font-semibold text-[12px]"><i class="fa-solid fa-check"></i> Live assement</p>
+                            <p class="text-black font-semibold text-[12px]"><i class="fa-solid fa-check"></i> 2D pratice question given.</p>
+                        </div>
+                        <div class="mt-5">
+                            <a href="#" class="rounded-full px-6 py-3 bg-green-500 text-white font-semibold text-[12px]">Continue to Membership</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1-item m-auto shadow-lg" data-aos="fade-left">
+                    <div class="bg-sky-300 p-5 rounded-md text-white">
+                        <h2 class="font-semibold text-[20px]"> Standart Plan</h2>
+                        <h1 class="mt-4 text-black text-[20px] font-bold">$40<span class="text-[12px]">/month</span>
+                        </h1>
+                        <div class="mt-5">
+                            <p class="text-black font-semibold text-[14px]"><i class="fa-solid fa-check"></i> Can access
+                                some videos</p>
+                            <p class="text-white font-semibold text-[14px]"><i class="fa-solid fa-check"></i> Question
+                                and answer question</p>
+                            <p class="text-black font-semibold text-[14px]"><i class="fa-solid fa-check"></i> Video desicusin of question</p>
+                            <p class="text-white font-semibold text-[14px]"> <i class="fa-solid fa-check"></i> Departmental consulting and <br>couseling
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-100 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-slate-100 gray-600">
+    <span class="text-[20px] font-semibolds sm:text-center dark:text-yellow-400">CourTry <a href="#" class="hover:underline"></a>
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm text-black sm:mt-0">
+        <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+        </li>
+        <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+        </li>
+        <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Contact</a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
